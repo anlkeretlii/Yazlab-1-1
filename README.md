@@ -19,7 +19,7 @@ Bu proje, **tariflerin ve malzemelerin düzenlenmesini kolaylaştırmak için ta
 ### Kullanılan Teknolojiler
 - **Java** - Ana geliştirme dili
 - **Java Swing** - Kullanıcı arayüzü
-- **JDBC** - Veritabanı bağlantısı
+- **MySQL** - Veritabanı bağlantısı
 
 ### Sınıf Yapısı
 
