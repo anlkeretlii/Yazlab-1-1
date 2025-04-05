@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ui.MainGUI">
+  <grid id="27dc6" binding="MainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="935" height="527"/>
+    </constraints>
+    <properties>
+      <background color="-1"/>
+      <doubleBuffered value="false"/>
+      <foreground color="-11751600"/>
+      <preferredSize width="1280" height="720"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="6411f" binding="rightPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="East"/>
+        <properties>
+          <background color="-1"/>
+          <doubleBuffered value="false"/>
+          <foreground color="-11751600"/>
+          <preferredSize width="320" height="57"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="50b0b" binding="inventoryPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <doubleBuffered value="false"/>
+            </properties>
+            <border type="line" title="Envanter"/>
+            <children>
+              <grid id="5ad71" binding="invBotPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints border-constraint="South"/>
+                <properties>
+                  <background color="-1"/>
+                  <doubleBuffered value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="a2a84" class="javax.swing.JButton" binding="invAddBtn" custom-create="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-7689499"/>
+                      <label value="Ekle"/>
+                      <text value="Ekle"/>
+                    </properties>
+                  </component>
+                  <component id="4f331" class="javax.swing.JButton" binding="invDelBtn" custom-create="true">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-7689499"/>
+                      <label value="Sil"/>
+                      <text value="Sil"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <scrollpane id="d5755" binding="invScrollPane" custom-create="true">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <background color="-1"/>
+                  <doubleBuffered value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="c0aa7" class="javax.swing.JTable" binding="invTable" custom-create="true">
+                    <constraints/>
+                    <properties>
+                      <showHorizontalLines value="true"/>
+                      <showVerticalLines value="true"/>
+                      <visible value="true"/>
+                    </properties>
+                    <clientProperties>
+                      <Table.isFileList class="java.lang.Boolean" value="false"/>
+                    </clientProperties>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+          <grid id="e65a8" binding="ingredientsPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <doubleBuffered value="false"/>
+            </properties>
+            <border type="line" title="Malzemeler"/>
+            <children>
+              <grid id="57204" binding="ingrBotPanel" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints border-constraint="South"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="d4ab8" class="javax.swing.JButton" binding="ingrAddBtn" custom-create="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-7689499"/>
+                      <label value="Ekle"/>
+                      <text value="Ekle"/>
+                    </properties>
+                  </component>
+                  <component id="9a1a5" class="javax.swing.JButton" binding="ingrDelBtn" custom-create="true">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-7689499"/>
+                      <label value="Sil"/>
+                      <text value="Sil"/>
+                    </properties>
+                  </component>
+                  <component id="7f2fb" class="javax.swing.JButton" binding="ingrUpdtBtn" custom-create="true">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-7689499"/>
+                      <label value="Güncelle"/>
+                      <text value="Güncelle"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <scrollpane id="9a00d" binding="ingrScrollPane" custom-create="true">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <background color="-1"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="3aec9" class="javax.swing.JTable" binding="ingrTable" custom-create="true">
+                    <constraints/>
+                    <properties>
+                      <showHorizontalLines value="true"/>
+                      <showVerticalLines value="true"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="21c72" binding="centerPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-1"/>
+          <doubleBuffered value="false"/>
+        </properties>
+        <border type="line"/>
+        <children>
+          <grid id="adba2" binding="searchBar" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints border-constraint="North"/>
+            <properties>
+              <background color="-1"/>
+            </properties>
+            <border type="line"/>
+            <children>
+              <component id="32d27" class="javax.swing.JTextField" binding="tfield_searchBar">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                </properties>
+              </component>
+              <component id="76cbb" class="javax.swing.JButton" binding="searchBtn" custom-create="true">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7689499"/>
+                  <text value="Ara"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="1cd9c" binding="recipesPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints border-constraint="Center"/>
+            <properties>
+              <background color="-1"/>
+              <doubleBuffered value="false"/>
+              <foreground color="-11751600"/>
+            </properties>
+            <border type="line" title="Tarifler"/>
+            <children>
+              <grid id="3d511" binding="recipesBottomPanel" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <doubleBuffered value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="9acca" class="javax.swing.JButton" binding="ekleButton" custom-create="true" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-7689499"/>
+                      <text value="Ekle"/>
+                    </properties>
+                  </component>
+                  <component id="1c7f4" class="javax.swing.JButton" binding="silButton" custom-create="true" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-7689499"/>
+                      <text value="Sil"/>
+                    </properties>
+                  </component>
+                  <component id="812dc" class="javax.swing.JButton" binding="güncelleButton" custom-create="true" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-7689499"/>
+                      <text value="Güncelle"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <scrollpane id="dfac6" binding="recipesScollPane" custom-create="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <doubleBuffered value="false"/>
+                  <enabled value="true"/>
+                  <foreground color="-1"/>
+                  <verticalScrollBarPolicy value="20"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="62e5d" class="javax.swing.JTable" binding="recipesTable" custom-create="true">
+                    <constraints/>
+                    <properties>
+                      <showHorizontalLines value="true"/>
+                      <showVerticalLines value="true"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+          <grid id="917da" binding="filtersPanel" layout-manager="GridBagLayout">
+            <constraints border-constraint="East"/>
+            <properties>
+              <background color="-1"/>
+              <doubleBuffered value="false"/>
+              <inheritsPopupMenu value="false"/>
+              <preferredSize width="300" height="24"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="5fda" binding="sortingfPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="0">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="0.5"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <doubleBuffered value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="5b757" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Sıralama"/>
+                    </properties>
+                  </component>
+                  <component id="ec087" class="javax.swing.JComboBox" binding="sortCBox" custom-create="true">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="bb693" binding="costfPanel" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="0">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <doubleBuffered value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="1162f" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.5"/>
+                      <background color="-11751600"/>
+                      <text value="Maliyet (TL)"/>
+                    </properties>
+                  </component>
+                  <component id="71794" class="javax.swing.JTextField" binding="costMinTField" custom-create="true">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-1"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <component id="23c90" class="javax.swing.JTextField" binding="costMaxTField" custom-create="true">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-1"/>
+                      <text value="1000"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="58f6d" binding="ingrfPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="100"/>
+                  </grid>
+                  <gridbag weightx="1.0" weighty="4.0"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <doubleBuffered value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="52e6e" class="javax.swing.JLabel">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <text value="Malzemeleri Filtrele"/>
+                    </properties>
+                  </component>
+                  <scrollpane id="d6850" binding="ingrfScrollPane" custom-create="true">
+                    <constraints border-constraint="Center"/>
+                    <properties>
+                      <background color="-1"/>
+                      <enabled value="true"/>
+                      <foreground color="-1"/>
+                      <horizontalScrollBarPolicy value="30"/>
+                      <verticalScrollBarPolicy value="20"/>
+                    </properties>
+                    <border type="none"/>
+                    <children/>
+                  </scrollpane>
+                </children>
+              </grid>
+              <grid id="ee992" binding="categoryfPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="0">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <doubleBuffered value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="cadcd" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Kategori"/>
+                    </properties>
+                  </component>
+                  <component id="e5147" class="javax.swing.JComboBox" binding="categoryCBox" custom-create="true">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="898ed" binding="ingrVarfPanel" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="0">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <doubleBuffered value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="ee56e" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Malzeme Çeşidi Sayısı"/>
+                    </properties>
+                  </component>
+                  <component id="775d1" class="javax.swing.JTextField" binding="typeMinCountTField" custom-create="true">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="1" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-1"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <component id="4ccc5" class="javax.swing.JTextField" binding="typeMaxCountTField" custom-create="true">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-1"/>
+                      <text value="20"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="7af4e" binding="filterBtnsPanel" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="5.0"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <doubleBuffered value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <vspacer id="3986a">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </vspacer>
+                  <component id="f7e6c" class="javax.swing.JButton" binding="reloadBtn" custom-create="true">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-7689499"/>
+                      <text value="Yenile"/>
+                    </properties>
+                  </component>
+                  <component id="3b56b" class="javax.swing.JButton" binding="filterBtn" custom-create="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-7689499"/>
+                      <text value="Filtrele"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
